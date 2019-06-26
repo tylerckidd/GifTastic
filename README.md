@@ -15,9 +15,9 @@ Enjoy!
 
 ## Tools
 
-* jQuery
+* jQuery:AJAX
 * HTML
 * CSS
 * JavaScript
-* AJAX Request: Giphy API
+
 
