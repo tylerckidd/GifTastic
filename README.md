@@ -5,7 +5,7 @@
 
 Giphy-Personality: Web Application 
 
-DEMO: https://tylerckidd.github.io/Collecting-Crystals/
+DEMO: https://tylerckidd.github.io/Giphy-Personality/
 
 ## Introduction
 
