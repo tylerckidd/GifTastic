@@ -1,0 +1,53 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Knewave&display=swap');
+
+body, html {
+    height: 100%;
+    
+    background-position: center;
+    text-align: center;
+    background-color: #141E30;
+background: linear-gradient(to right, #24243e, #141E30, #0f0c29)  
+  }
+  .container {
+    /* The image used */
+    background-image: url("giphy.gif");
+    
+  
+    /* Full height */
+    height: 70%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+
+  .h1{
+
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-family: 'Knewave', cursive
+    
+  }
+
+  .gif{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white
+  }
+
+ .img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+ }
+
+ .h2{
+  color: white
+ }
+
