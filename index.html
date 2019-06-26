@@ -9,7 +9,6 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-<<<<<<< HEAD
     <link rel="stylesheet" href="style.css"/>
 
     
@@ -25,33 +24,6 @@
 
 <div class="container">
     <div class="row">
-=======
-    <style>
-      body {
-        background-color: black;
-      }
-    </style>
-  </head>
-
-  <body>
-    <span class="d-block p-2 bg-dark text-white">Tell me how you feel</span>
-    <form type="form" class="form-control-lg text-white " class="form-inline">
-      <label for="data-person">How do you feel?</label>
-      <input type="text" id="data-person" /><br />
-
-      <!-- Button triggers new movie to be added -->
-      <input id="data-person" type="submit" value="Let's See!" />
-    </form>
-    <div
-      class="container"
-      style="width: 100%;text-align: center"
-      class="p-3 mb-2 bg-dark text-white"
-    >
-      <img src="giphy.gif" class="center" alt="..." />
-
-      <div class="container">
-        <div class="row">
->>>>>>> be2ee212112c65947fc9c6be91835d83a22cbdbc
           <div class="col-sm">
             <button type="button" class="btn btn-dark" data-person="Tired">
               Tired
@@ -76,7 +48,6 @@
             <button type="button" class="btn btn-dark" data-person="Sadness">
               Sad
             </button>
-<<<<<<< HEAD
         </div>
     </div>
     
@@ -93,75 +64,4 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  <script src="back.js"></script> 
 
-=======
-          </div>
-        </div>
-      </div>
-
-      <div id="gifs-appear-here"></div>
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script type="text/javascript">
-        // Event listener for all button elements
-        $("button").on("click", function() {
-          // In this case, the "this" keyword refers to the button that was clicked
-          var person = $(this).attr("data-person");
-
-          // Constructing a URL to search Giphy for the name of the person who said the quote
-          var queryURL =
-            "https://api.giphy.com/v1/gifs/search?q=" +
-            person +
-            "&api_key=dc6zaTOxFJmzC&limit=10";
-
-          // Performing our AJAX GET request
-          $.ajax({
-            url: queryURL,
-            method: "GET"
-          })
-            // After the data comes back from the API
-            .then(function(response) {
-              // Storing an array of results in the results variable
-              var results = response.data;
-
-              // Looping over every result item
-              for (var i = 0; i < results.length; i++) {
-                // Only taking action if the photo has an appropriate rating
-                if (
-                  results[i].rating !== "r" &&
-                  results[i].rating !== "pg-13"
-                ) {
-                  // Creating a div for the gif
-                  var gifDiv = $("<div>");
-
-                  // Storing the result item's rating
-                  var rating = results[i].rating;
-
-                  // Creating a paragraph tag with the result item's rating
-                  var p = $("<p>").text("Rating: " + rating);
-
-                  // Creating an image tag
-                  var personImage = $("<img>");
-
-                  // Giving the image tag an src attribute of a proprty pulled off the
-                  // result item
-                  personImage.attr("src", results[i].images.fixed_height.url);
-
-                  // Adding a class of movie to our button
-
-                  // Appending the paragraph and personImage we created to the "gifDiv" div we created
-
-                  gifDiv.append(p);
-                  gifDiv.append(personImage);
-
-                  
-                  // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-                  $("#gifs-appear-here").prepend(gifDiv);
-                }
-              }
-            });
-        });
-      </script>
-    </div>
-  </body>
->>>>>>> be2ee212112c65947fc9c6be91835d83a22cbdbc
 </html>
